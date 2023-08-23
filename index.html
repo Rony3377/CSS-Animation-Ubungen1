@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation übungen</title>
+  </head>
+  <style>
+    img {
+      max-width: 160px;
+      max-height: 160px;
+      animation-name: lore;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+    }
+    main {
+      margin: 20px;
+      display: grid;
+      border: 5px inset rgb(155, 155, 167);
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 200px 200px 200px;
+    }
+    div {
+      width: auto;
+      background-color: lightblue;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      display: flex;
+      animation-name: lo;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+      background-image: linear-gradient(
+        rgb(110, 96, 96),
+        rgb(0, 255, 255),
+        rgb(153, 128, 128),
+        rgb(255, 0, 179)
+      );
+    }
+    @keyframes lo {
+      0% {
+        border: darkmagenta solid 5px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+      5% {
+        border: rgb(114, 95, 114) solid 5px;
+        grid-column-start: 2;
+        grid-row-start: 1;
+      }
+      10% {
+        border: rgb(221, 169, 221) solid 5px;
+        grid-column-start: 3;
+        grid-row-start: 1;
+      }
+      15% {
+        border: rgb(93, 138, 141) solid 5px;
+        grid-column-start: 4;
+        grid-row-start: 1;
+      }
+      20% {
+        border: rgb(62, 80, 97) solid 5px;
+        grid-column-start: 5;
+        grid-row-start: 1;
+      }
+      25% {
+        border: rgb(95, 106, 114) solid 5px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+      }
+      30% {
+        border: rgb(118, 148, 65) solid 5px;
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+      35% {
+        border: rgb(95, 100, 114) solid 5px;
+        grid-column-start: 3;
+        grid-row-start: 2;
+      }
+      40% {
+        border: rgb(64, 84, 90) solid 5px;
+        grid-column-start: 4;
+        grid-row-start: 2;
+      }
+      45% {
+        border: rgb(106, 189, 192) solid 5px;
+        grid-column-start: 5;
+        grid-row-start: 2;
+      }
+      50% {
+        border: rgb(33, 85, 105) solid 5px;
+        grid-column-start: 1;
+        grid-row-start: 3;
+      }
+      55% {
+        border: rgb(216, 208, 138) solid 5px;
+        grid-column-start: 2;
+        grid-row-start: 3;
+      }
+
+      60% {
+        border: rgb(81, 202, 57) solid 5px;
+        grid-column-start: 3;
+        grid-row-start: 3;
+      }
+
+      80% {
+        border: rgb(33, 59, 29) solid 5px;
+        grid-column-start: 4;
+        grid-row-start: 3;
+      }
+      100% {
+        border: rgb(205, 214, 214) solid 5px;
+        grid-column-start: 5;
+        grid-row-start: 3;
+      }
+    }
+    @keyframes lore {
+      0% {
+        border-radius: 25%;
+        transform: rotate(0deg);
+      }
+      100% {
+        border-radius: 100%;
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <div class="box1">
+        <img
+          src="https://images-fr.corendon.be/V171010182050/L1E680A7W300H200.jpg"
+        />
+      </div>
+    </main>
+  </body>
+</html>
